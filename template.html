@@ -32,7 +32,7 @@
         </section>
         <section>
             <h2>Subtitulo2</h2>
-            <p>Lorem ipsum dolor sit amet <a href="http://www.youtube.com">consectetur</a> adipisicing elit. 
+            <p>Lorem ipsum dolor sit amet <a href="http://www.youtube.com" target="_blank">consectetur</a> adipisicing elit. 
                Earum culpa voluptates officiis deserunt placeat quos 
                perspiciatis qui minima. Fugiat, architecto.</p>
                <img src="Images/me.jpg" alt="A picture of myself">
@@ -44,7 +44,11 @@
         </section>
     </main>
     <footer>
-
+        &COPY; 2020 | Zetty Davalos | Today's date: <span id="date"></span>
     </footer>
+    <script>
+        const options = {weekday:"long", day:"numeric", month:"long", year:"numeric"};
+        document.getElementById("date").textContent = new Date().toLocaleDateString("en-Us", options);
+    </script>
 </body>
 </html>
