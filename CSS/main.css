@@ -3,11 +3,12 @@ background-color: rgb(90, 201, 105);
 font-family: 'Times New Roman', Times, serif;
 }
 header h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    height: 1.2em;
     color: white;
     background-color: rgb(77, 10, 1);
     padding: 5px;
-    padding-right: 200px;
+    padding-right: 400px;
     border: solid 3px black;
     border-radius: 10px;
     text-align: center;
@@ -15,24 +16,29 @@ header h1 {
 }
 header img {
     float: right;
-    width:320px;
-    height: 400px;
-    margin-right: 50px;
+    width:210px;
+    height: 270px;
+    margin-right: 40px;
     margin-top: -100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.746), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
 }
 main {
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+main ul {
+    margin-top: -15px;
 }
 main h2 {
-    margin-bottom: -15px;
+    margin-bottom: -20px;
+    font-size: 3.4rem;
 }
 footer {
-    margin-top: 100px;
-    font-size: 1.2em;
+    margin-top: 5rem;
+    font-size: 1.8em;
     color: white;
     background-color: rgb(77, 10, 1);
     border: solid 3px black;
     border-radius: 10px;
     text-align: center;
+    line-height: 0.5em;
 }
