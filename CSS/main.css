@@ -13,9 +13,11 @@ header h1 {
     border-radius: 10px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 100%;
 }
 header img {
     float: right;
+    max-width: 100%;
     width:210px;
     height: 270px;
     margin-right: 40px;
