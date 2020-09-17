@@ -44,3 +44,6 @@ footer {
     text-align: center;
     line-height: 0.5em;
 }
+footer p a {
+    color: white;
+}
