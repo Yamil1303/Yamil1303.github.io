@@ -1,7 +1,6 @@
 body {
 background-color: rgb(90, 201, 105);
-font-family: 'Times New Roman', Times, serif;
-}
+font-family: 'Montserrat', sans-serif;}
 header h1 {
     font-size: 5rem;
     height: 1.2em;
@@ -12,7 +11,7 @@ header h1 {
     border: solid 3px black;
     border-radius: 10px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Russo One', sans-serif;
     max-width: 100%;
 }
 header img {
@@ -26,6 +25,7 @@ header img {
 }
 main {
     font-size: 2.5rem;
+    margin-left: 10px;
 }
 main ul {
     margin-top: -15px;
