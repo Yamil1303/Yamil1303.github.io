@@ -13,6 +13,9 @@
         font-size: 2.5rem;
         margin-top: 50px;
     }
+    main ul {
+        margin-top: -5px;
+    }
     main h2 {
         font-size: 3.4rem;
     }
