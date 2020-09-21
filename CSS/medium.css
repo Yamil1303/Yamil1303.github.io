@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em){
+@media (min-width: 32.5em){
     header img {
         float: right;
         margin-right: 40px;
@@ -10,14 +10,11 @@
         padding-right: 300px;
     }
     main {
-        font-size: 2.5rem;
         margin-top: 50px;
     }
     main ul {
         margin-top: -5px;
-    }
-    main h2 {
-        font-size: 3.4rem;
+        font-size: 2.5rem;
     }
     footer {
         line-height: 0.5em;
