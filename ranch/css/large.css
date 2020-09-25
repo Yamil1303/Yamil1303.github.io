@@ -8,5 +8,8 @@
     nav a {
         padding: .5rem 1rem;
     }
+    main figure {
+        width: 31%;
+    }
 
 }/* end of media query */
