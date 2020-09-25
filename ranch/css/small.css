@@ -58,6 +58,11 @@ main figcaption {
     text-align: center;
     font-size: .8rem;
 }
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #19a8e4;
+}
 
 
 
