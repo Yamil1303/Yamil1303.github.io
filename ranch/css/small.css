@@ -43,13 +43,8 @@ nav a:hover {
 
 
 
-
-
-
-
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
- 
 }
