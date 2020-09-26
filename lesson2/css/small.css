@@ -3,9 +3,61 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-body {
+p {
+    width: 90%;
+    margin: auto;
+    font-size: 1.3rem;
     font-family: 'Cormorant Garamond', serif;
+}
+.move {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.down {
+    margin-bottom: -1rem;
+}
+body {
+    background-color: rgb(113, 226, 241);
+    max-width: 100%;
+}
+header h1 {
+    padding-top: 1rem;
+    font-size: 2.3rem;
+}
+header h2 {
+    padding-bottom: 1rem;
+}
+header h1, header h2 {
+    text-align: center;
+    background-color: bisque;
+    margin: 0;
+}
+main h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 h1, h2 {
     font-family: 'Share Tech', sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 5px 10px 8px #888888;
+}
+figure {
+    margin: auto;
+}
+footer {
+    background-color: bisque;
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
 }
