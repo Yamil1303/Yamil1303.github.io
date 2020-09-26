@@ -1,6 +1,8 @@
-* { -moz-box-sizing: border-box;
+* {
+    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 body {
     font-family: Verdana;
     font-size: 16px;
@@ -25,12 +27,12 @@ nav ul {
 nav li {
     list-style-type: none;
 }
-nav li:active {
+nav li.active {
     background-color: #333;
 }
 nav a {
     display: block;
-    padding: .8rem 0;/* 44min height*/
+    padding: .8rem 0;
     color: #eee;
     text-align: center;
     text-decoration: none;
