@@ -27,7 +27,7 @@ nav ul {
 nav li {
     list-style-type: none;
 }
-nav li.active {
+nav li:active {
     background-color: #333;
 }
 nav a {
