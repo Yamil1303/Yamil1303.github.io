@@ -15,7 +15,7 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: rgb(243, 214, 152);
 }
 header img {float: left; margin-right: 10px; width: 55px;}
 
@@ -59,7 +59,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: rgb(243, 214, 152);
     padding: .5rem 2%;
     text-align: center;
 }
