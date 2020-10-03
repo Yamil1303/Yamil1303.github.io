@@ -77,6 +77,9 @@ main {
 img {
     max-width: 150px;
 }
+#domain {
+    max-width: 100%;
+}
 .audience {
     border-collapse: collapse;
     width: 100%;
