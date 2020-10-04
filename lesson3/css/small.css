@@ -4,11 +4,11 @@ body {
     margin: auto;
     box-sizing: border-box;
 }
-body p {
+body p, ul li, table tr td {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
 }
-h1, h2, h3 {
+h1, h2, h3, tr th {
     font-family: 'Share Tech', sans-serif;
 }
 header {
@@ -87,7 +87,6 @@ img {
 }
 .audience, .audience th, .audience td {
     border: 1px solid black;
-    font-family: var(--paragraph-font);
 }
 .audience td {
     height: 40px;
