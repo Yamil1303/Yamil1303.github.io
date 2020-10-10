@@ -14,11 +14,11 @@ h1, h2, h3, tr th {
 
 /* header */
 header {background-color: #550e97;}
-header h1 {font-size: 1.5rem;}
+header h1 {font-size: 1.5rem; color: #f5f5f5;}
 #logo {margin: 0; width: 55px; float: left;}
 img {max-width:100%; margin-left: 10px; margin-top: 20px;}
 #header {margin-left: 70px; padding-top: 10px;}
-#header h2 {margin-top: -15px; margin-bottom: 15px; font-size: 1.1rem;}
+#header h2 {margin-top: -15px; margin-bottom: 15px; font-size: 1.1rem; color: #f5f5f5;}
 button {float: right; margin-right: 15px; margin-top: -50px;}
 
 /* Navigation */
@@ -36,7 +36,8 @@ main {background-color: #f5f5f5; margin-top: -25px; padding-left: 10px; padding-
 
 /* Footer */
 footer {background-color: #550e97; text-align: center; margin-top: -20px; margin-bottom: -20px; padding: 0.1px;}
-
+footer p {color: #f5f5f5}
+footer p a {color: #f5f5f5; text-decoration: none;}
 
 .clearfix:after {
     content: "";
