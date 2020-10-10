@@ -13,29 +13,29 @@ h1, h2, h3, tr th {
 }
 
 /* header */
-header {background-color: #550e97;}
+header {background-color: #550e97; display: flex; align-items: center; justify-content: left; padding-left: 10px;}
 header h1 {font-size: 1.5rem; color: #f5f5f5;}
-#logo {margin: 0; width: 55px; float: left;}
-img {max-width:100%; margin-left: 10px; margin-top: 20px;}
-#header {margin-left: 70px; padding-top: 10px;}
-#header h2 {margin-top: -15px; margin-bottom: 15px; font-size: 1.1rem; color: #f5f5f5;}
+#logo {margin: 0; width: 55px;}
+img {max-width:100%;}
+#header {margin-left: 10px; line-height: 0.7em;}
+#header h2 {font-size: 1.1rem; color: #f5f5f5;}
 button {float: right; margin-right: 15px; margin-top: -50px;}
 
 /* Navigation */
-nav {background-color: black;}
 nav ul {padding: 0; margin: 0;}
-nav ul li {list-style-type: none;}
-nav ul li a {text-decoration: none; color: #f5f5f5; display: block; padding: 10px;}
-nav ul li a:hover {background-color: #f5f5f5; color: #550e97; font-size: 1.3rem;}
+nav ul li {list-style-type: none; background-color: black;}
+nav ul li a {text-decoration: none; color: #f5f5f5; display: block; padding: 10px; text-align: center;}
+nav ul li a:hover {background-color: #f5f5f5; color: #550e97;}
 nav ul li.active {background-color: #e5fd94;}
 nav ul li.active a {color: black;}
 .hide {display: none;}
 
 /* Main */
-main {background-color: #f5f5f5; margin-top: -25px; padding-left: 10px; padding-bottom: 10px;}
+main {background-color: #f5f5f5; margin-top: -22px; padding-left: 10px; padding-bottom: 10px;}
+main h2 {padding-top: 10px;}
 
 /* Footer */
-footer {background-color: #550e97; text-align: center; margin-top: -20px; margin-bottom: -20px; padding: 0.1px;}
+footer {background-color: #550e97; text-align: center;padding: 0.1px;}
 footer p {color: #f5f5f5}
 footer p a {color: #f5f5f5; text-decoration: none;}
 
