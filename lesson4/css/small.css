@@ -1,0 +1,45 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body {background-color: #e5fd94;}
+body p, ul li, table tr td {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+}
+h1, h2, h3, tr th {
+    font-family: 'Share Tech', sans-serif;
+}
+
+/* header */
+header {background-color: #550e97;}
+header h1 {font-size: 1.5rem;}
+#logo {margin: 0; width: 55px; float: left;}
+img {max-width:100%; margin-left: 10px; margin-top: 20px;}
+#header {margin-left: 70px; padding-top: 10px;}
+#header h2 {margin-top: -15px; margin-bottom: 15px; font-size: 1.1rem;}
+button {float: right; margin-right: 15px; margin-top: -50px;}
+
+/* Navigation */
+nav {background-color: black;}
+nav ul {padding: 0; margin: 0;}
+nav ul li {list-style-type: none;}
+nav ul li a {text-decoration: none; color: #f5f5f5; display: block; padding: 10px;}
+nav ul li a:hover {background-color: #f5f5f5; color: #550e97; font-size: 1.3rem;}
+nav ul li.active {background-color: #e5fd94;}
+nav ul li.active a {color: black;}
+.hide {display: none;}
+
+/* Main */
+main {background-color: #f5f5f5; margin-top: -25px; padding-left: 10px; padding-bottom: 10px;}
+
+/* Footer */
+footer {background-color: #550e97; text-align: center; margin-top: -20px; margin-bottom: -20px; padding: 0.1px;}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
