@@ -1,0 +1,19 @@
+@media only screen and (min-width: 560px) {
+    /* Header */
+    #logo {width: 90px;}
+    #header h1 {font-size: 2.5rem;}
+    #header h2 {font-size: 1.5rem;}
+
+    /* Navigation */
+    button {float: none; margin: 7px; display: none;}
+    .hide {display: flex;}
+    .hide li {flex: 1;}
+    .hide li a {text-align: left;}
+
+    /* Main */
+    main #summary {top: 200px; left: 20px;}
+    main section .forecast {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
+    main section .forecast div {text-align: center; border: 1px solid #aaa; background-color: white;}
+    main section .forecast div h5 {background-color: #eee; margin: 0; padding: 1rem 0;}
+
+}

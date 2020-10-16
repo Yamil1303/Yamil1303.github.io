@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1028px) {
+    /* Header */
+    header {justify-content: left; justify-content: left; max-width: 1028px; margin: auto;}
+    .headerwrapper {background-color: #550e97;}
+
+    /* Nav */
+    .navwrapper {background-color: black;}
+    nav {max-width: 1028px; margin: auto;}
+
+    /* Main */
+    main {max-width: 1028px; margin: -22px auto;}
+    main #summary {left: 12rem;}
+
+
+    /* Footer /
+    footer {max-width: 1028px; margin: 22px auto 0 auto;}
+}

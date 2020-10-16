@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston | Weather for Everyone</title>
+    <meta name="description" content="Preston Town Page - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Share+Tech&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div class="headerwrapper">
+    <header class="clearfix">
+        <figure id="logo">
+            <img src="images/logo.png" alt="The logo for our website">
+        </figure>
+        <div id="header">
+        <h1>Weather for Everyone</h1>
+        <h2>Whether you're in or out</h2>
+        </div>
+    </header>
+    </div>
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    </div>
+    <main>
+        <h2>Preston Idaho</h2>
+        <figure id="hero">
+            <img src="images/hero image.jpg" alt="image that occupy all the screen">
+        </figure>
+        <div id="summary">
+            <h3>Weather summary</h3>
+            <ul>
+                <li>High: xx</li>
+                <li>Low: xx</li>
+                <li>Wind: xx</li>
+            </ul>
+        </div>
+        <section>
+            <h2>Five Day Forecast</h2>
+            <section class="forecast">
+                <div>
+                    <h5>Monday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>36&deg;</p>
+                </div>
+                <div>
+                    <h5>Tuesday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>37&deg;</p>
+                </div>
+                <div>
+                    <h5>Wednesday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>34&deg;</p>
+                </div>
+                <div>
+                    <h5>Thursday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>35&deg;</p>
+                </div>
+                <div>
+                    <h5>Friday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>36&deg;</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <a href="https://www.byui.edu/online">BYUI online learning</a></p>
+        <p><span id="date"></span></p>
+        </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
