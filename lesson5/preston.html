@@ -36,6 +36,7 @@
         </ul>
     </nav>
     </div>
+    <div id="message">The message about Sunday church</div>
     <main>
         <h2>Preston Idaho</h2>
         <div class="hero">
@@ -109,5 +110,14 @@
         <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <span id="date"></span></p>
     </footer>
     <script src="js/scripts.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        if (dayNumber == 6) {
+            document.getElementById("message").classList.add("showme");
+        } else {
+            document.getElementById("message").classList.add("hideme");
+        }
+    </script>
 </body>
 </html>
