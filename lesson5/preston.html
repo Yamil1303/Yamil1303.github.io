@@ -38,19 +38,19 @@
     </div>
     <main>
         <h2>Preston Idaho</h2>
-        <figure id="hero">
+        <div class="hero">
             <img src="images/hero image.jpg" alt="image that occupy all the screen">
-        </figure>
-        <div id="summary">
-            <h3>Weather summary</h3>
-            <ul>
-                <li>High: xx</li>
-                <li>Low: xx</li>
-                <li>Wind: xx</li>
-            </ul>
+            <div id="summary">
+                <h3>Weather summary</h3>
+                <ul>
+                    <li>High: xx</li>
+                    <li>Low: xx</li>
+                    <li>Wind: xx</li>
+                </ul>
+            </div>
         </div>
-        <section>
-            <h2>Five Day Forecast</h2>
+        <section class="hideMeSmall">
+            <h2 id="hideMeSmall">Five Day Forecast</h2>
             <section class="forecast">
                 <div>
                     <h5>Monday</h5>
@@ -79,10 +79,34 @@
                 </div>
             </section>
         </section>
+        <article>
+            <h2>Article Title</h2>
+            <img id="medium" src="images/article.jpg" alt="Image for the article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit voluptatibus est, commodi reiciendis dolorem ab tempora. A maiores commodi nostrum non autem eius perferendis est dolorum asperiores sit accusamus possimus nisi et quas recusandae mollitia voluptas, molestias odio aut, vel excepturi saepe quae modi! Consequuntur corrupti explicabo at dicta quis, maiores quos qui iste nobis ex vitae amet dolor corporis natus nulla molestias eveniet inventore nostrum pariatur, impedit minus quaerat cum. Sunt a architecto libero sint, nisi eum qui omnis ea dolores ex. Blanditiis possimus ratione aliquam nisi ab ex architecto tenetur voluptates, dicta, sit quod, consequuntur esse ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit voluptatibus est, commodi reiciendis dolorem ab tempora. A maiores commodi nostrum non autem eius perferendis est dolorum asperiores sit accusamus possimus nisi et quas recusandae mollitia voluptas, molestias odio aut, vel excepturi saepe quae modi! Consequuntur corrupti explicabo at dicta quis, maiores quos qui iste nobis ex vitae amet dolor corporis natus nulla molestias eveniet inventore nostrum pariatur, impedit minus quaerat cum. Sunt a architecto libero sint, nisi eum qui omnis ea dolores ex. Blanditiis possimus ratione aliquam nisi ab ex architecto tenetur voluptates, dicta, sit quod, consequuntur esse ea.</p>
+            <img id="small" src="images/article.jpg" alt="Image for the article">
+        </article>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <article>
+                <div>
+                    <h3>Address:</h3>
+                    <p>The weather center</p>
+                    <p>123 Main Street</p>
+                    <p>Franklin, MI 87654</p>
+                </div>
+                <div id="right">
+                    <h3>Phone:</h3>
+                    <p>(801) 555-1234</p>
+                    <h3>Email:</h3>
+                    <p>yamil_sud@hotmail.com</p>
+                </div>
+            </article>
+            <img id="small" src="images/map.jpg" alt="Map's image of Preston, Idaho">
+        </section>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <a href="https://www.byui.edu/online">BYUI online learning</a></p>
-        <p><span id="date"></span></p>
+        <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <span id="date"></span></p>
         </footer>
     <script src="js/scripts.js"></script>
 </body>

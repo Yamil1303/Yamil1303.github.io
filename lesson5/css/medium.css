@@ -11,9 +11,16 @@
     .hide li a {text-align: left;}
 
     /* Main */
-    main #summary {top: 200px; left: 20px;}
+    main .hideMeSmall {display: block;}
     main section .forecast {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
     main section .forecast div {text-align: center; border: 1px solid #aaa; background-color: white;}
     main section .forecast div h5 {background-color: #eee; margin: 0; padding: 1rem 0;}
+    main article img#small {display: none;}
+    main article img#medium {display: block; width: 30%; float:right; margin: 0 0 0 30px;}
+
+    main .contact {position: relative}
+    main .contact article #right {padding-left: 20%;}
+    main .contact img#small {display: block; position: absolute; width: 25%; bottom: 0px; right: 10px;}
+
 
 }

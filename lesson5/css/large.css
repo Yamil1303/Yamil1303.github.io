@@ -9,7 +9,9 @@
 
     /* Main */
     main {max-width: 1028px; margin: -22px auto;}
-    main #summary {left: 12rem;}
+    main .hideMeSmall {margin-bottom: 30px;}
+    main .contact img#small {display: block; position: absolute; width: 25%; bottom: 20px; right: 10px;}
+
 
 
     /* Footer /
