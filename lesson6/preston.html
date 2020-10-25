@@ -40,7 +40,12 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="hero">
-            <img src="images/heroImage.jpg" alt="image that occupy all the screen">
+            <picture>
+            <source media="(max-width: 559px)" srcset="images/500Small.jpg">
+            <source media="(max-width: 1027px)" srcset="images/800Medium.jpg">
+            <source media="(min-width: 1028px)" srcset="images/1100Large.jpg">
+            <img src="images/wdd230_image_franklinOriginal.jpeg" alt="image that occupy all the screen">
+            </picture>
             <div id="summary">
                 <h3>Weather summary</h3>
                 <ul>
