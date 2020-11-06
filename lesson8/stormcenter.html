@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center | Weather for Everyone</title>
+    <meta name="description" content="Storm Center - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Share+Tech&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+    <div class="headerwrapper">
+    <header class="clearfix">
+        <figure id="logo">
+            <img src="images/logo.png" alt="The logo for our website">
+        </figure>
+        <div id="header">
+        <h1>Weather for Everyone</h1>
+        <h2>Whether you're in or out</h2>
+        </div>
+    </header>
+    </div>
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="message">The message about Sunday church</div>
+    <main>
+        <h1>Storm Center</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Reporter's Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,60}" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="user@gmail.com"></label>
+                <label class="top">Phone Number <input type="tel" name="phone" required></label>
+                <label class="top" for="num">Zip Code <input type="number" id="num" name="num" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Storm Information
+                </legend>
+                <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                <label class="top" for="type">Storm Type 
+                    <input list="stormType" id="type" name="type">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label class="top" for="severity">Storm Severity </label> <input type="range" id="severity" name="severity" min="1" max="10">
+                <label class="top">Storm Region 
+                    <select name="region">
+                        <option value="" disabled>Select Region ...&#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSpring">Soda Spring</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Additional Information
+                </legend>
+                <div>User In-danger Level</div>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="beginner"> Yes</label>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="intermediate"> Maybe</label>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="advanced"> No</label>
+
+                <label class="top" for="additional">Additional Information or Comments</label>
+                    <textarea id="additional" name="additional" rows="4" cols="30"></textarea>
+            </fieldset>
+            <input type="submit" value="Report a Storm" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <span id="date"></span></p>
+    </footer>
+    <script src="JS/scripts.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        if (dayNumber == 6) {
+            document.getElementById("message").classList.add("showme");
+        } else {
+            document.getElementById("message").classList.add("hideme");
+        }
+    </script>
+</body>
+</html>

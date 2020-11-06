@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Weather for Everyone</title>
+    <meta name="description" content="Gallery Page - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Share+Tech&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="headerwrapper">
+    <header class="clearfix">
+        <figure id="logo">
+            <img src="images/logo.png" alt="The logo for our website">
+        </figure>
+        <div id="header">
+        <h1>Weather for Everyone</h1>
+        <h2>Whether you're in or out</h2>
+        </div>
+    </header>
+    </div>
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="message">The message about Sunday church</div>
+    <main>
+        <h1>Weather Gallery</h1>
+        <div id="pictures">
+<!--1--><figure>
+            <img src="images/placeholder.jpg" data-src="images/cloudy.jpg" alt="Image number one">
+            <figcaption>A cloudy day.</figcaption>
+        </figure>
+<!--2--><figure>
+            <img src="images/placeholder.jpg" data-src="images/foggyDay.jpg" alt="Image number two">
+            <figcaption>A foggy day.</figcaption>
+        </figure>
+<!--3--><figure>
+            <img src="images/placeholder.jpg" data-src="images/goodWeather.jpg" alt="Image number three">
+            <figcaption>A good weather and place.</figcaption>
+        </figure>
+<!--4--><figure>
+            <img src="images/placeholder.jpg" data-src="images/hailing.jpg" alt="Image number four">
+            <figcaption>A day in wich it is hailing.</figcaption>
+        </figure>
+<!--5--><figure>
+            <img src="images/placeholder.jpg" data-src="images/hotWeather.jpg" alt="Image number five">
+            <figcaption>A very hot day.</figcaption>
+        </figure>
+<!--6--><figure>
+            <img src="images/placeholder.jpg" data-src="images/mildWeather.jpg" alt="Image number six">
+<figcaption>A mild weather.</figcaption>
+        </figure>
+<!--7--><figure>
+            <img src="images/placeholder.jpg" data-src="images/rainbow.jpg" alt="Image number six">
+            <figcaption>A beautiful rainbow.</figcaption>
+        </figure>
+<!--8--><figure>
+            <img src="images/placeholder.jpg" data-src="images/raining.jpg" alt="Image number six">
+            <figcaption>A day in which it is raining.</figcaption>
+        </figure>
+<!--9--><figure>
+            <img src="images/placeholder.jpg" data-src="images/snowing.jpg" alt="Image number six">
+            <figcaption>A day in which it is snowing.</figcaption>
+        </figure>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <span id="date"></span></p>
+    </footer>
+    <script src="JS/scripts.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        if (dayNumber == 6) {
+            document.getElementById("message").classList.add("showme");
+        } else {
+            document.getElementById("message").classList.add("hideme");
+        }
+    </script>
+    <script src="JS/lazyload.js"></script>
+</body>
+</html>
