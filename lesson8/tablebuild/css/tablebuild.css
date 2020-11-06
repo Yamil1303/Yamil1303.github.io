@@ -7,5 +7,3 @@ tfoot {font-size: 0.9em; background-color: hsl(188, 35%, 63%);}
 tbody {background-color: #e7ffed;}
 table tbody tr:nth-child(odd) {background-color: #e7f0ed;}
 table tbody #mark {background-color: #628ca6; color: white;}
-
-caption, thead, tbody, tfoot {width: 400px;}
