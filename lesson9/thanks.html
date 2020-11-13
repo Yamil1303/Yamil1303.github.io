@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center | Weather for Everyone</title>
+    <meta name="description" content="Storm Center - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Share+Tech&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <link rel="stylesheet" href="Css/form.css">
+</head>
+<body>
+    <div class="headerwrapper">
+    <header class="clearfix">
+        <figure id="logo">
+            <img src="images/logo.png" alt="The logo for our website">
+        </figure>
+        <div id="header">
+        <h1>Weather for Everyone</h1>
+        <h2>Whether you're in or out</h2>
+        </div>
+    </header>
+    </div>
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="message">The message about Sunday church</div>
+    <main>
+        <h1>Storm Center</h1>
+        <p>Thanks for submitting your Storm Report! We will get back to you as soon as possible</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <span id="date"></span></p>
+    </footer>
+    <script src="JS/scripts.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        if (dayNumber == 6) {
+            document.getElementById("message").classList.add("showme");
+        } else {
+            document.getElementById("message").classList.add("hideme");
+        }
+    </script>
+</body>
+</html>
