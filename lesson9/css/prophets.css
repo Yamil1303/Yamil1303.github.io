@@ -1,0 +1,27 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    background-color: rgb(109, 238, 131);
+}
+main {max-width: 1028px; margin: auto; padding: 10px;}
+h2 {font-size: 30px; }
+main p:nth-of-type(2) {margin: -10px 0 30px 0;}
+img {box-shadow: 0 0 15px 10px rgba(3, 4, 5, 0.5); width: 80%; margin-bottom: 20px;}
+.cards {display: grid; grid-template-columns: 1fr; grid-gap: 0.8em;}
+.cards section {border: 1px solid black; border-radius: 15px; background-color: rgb(216, 190, 190);}
+header {font-size: 3em; color: blue;}
+footer {font-size: 20px; background-color: rgb(37, 37, 37); color: white; padding: 5px;}
+
+
+
+@media only screen and (min-width: 560px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1028px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
