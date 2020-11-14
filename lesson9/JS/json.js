@@ -8,6 +8,7 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++ ) {
             let card = document.createElement('section');
+            let div = document.createElement('div');
             let name = document.createElement('h2');
             let motto = document.createElement('h3');
             let year = document.createElement('p');
@@ -24,11 +25,12 @@ fetch(requestURL)
             img.setAttribute('alt', "Photograph of: " + name.textContent);
 
             if (i==1 || i==4 || i==5){
-            card.appendChild(name);
-            card.appendChild(motto);
-            card.appendChild(year);
-            card.appendChild(population);
-            card.appendChild(rainfall);
+            div.appendChild(name);
+            div.appendChild(motto);
+            div.appendChild(year);
+            div.appendChild(population);
+            div.appendChild(rainfall);
+            card.appendChild(div);
             card.appendChild(img);
 
             document.querySelector('div.cities').appendChild(card);}
