@@ -24,7 +24,7 @@ fetch(requestURL)
             img.setAttribute('src', "images/" + towns[i].photo);
             img.setAttribute('alt', "Photograph of: " + name.textContent);
 
-            if (i==1 || i==4 || i==5){
+            if (i==0 || i==4 || i==5){
             div.appendChild(name);
             div.appendChild(motto);
             div.appendChild(year);
