@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Weather for Everyone</title>
+    <meta name="description" content="Home Page - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Share+Tech&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <link rel="stylesheet" href="CSS/cards.css">
+</head>
+<body>
+    <div class="headerwrapper">
+    <header class="clearfix">
+        <figure id="logo">
+            <img src="images/logo.png" alt="The logo for our website">
+        </figure>
+        <div id="header">
+        <h1>Weather for Everyone</h1>
+        <h2>Whether you're in or out</h2>
+        </div>
+    </header>
+    </div>
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="message">The message about Sunday church</div>
+    <main>
+        <h1>HOME</h1>
+        
+        <div class="cities"></div>
+
+        <article>
+            <h2>Weather or not, you like it!</h2>
+            <p>Life is busy and full of responsabilities. Imagine that one day you are getting 
+                ready for work or some meeting, and as you go out you approach your destiny it 
+                starts to rain. The purpose of this wensite is for you to prevent such 
+                things. It is better to be informed and know what the weather will be like 
+                next week, tomorrow, and even later. So, with this, you will enjoy more 
+                your days and even will take advantage of the weather to do some fun activity 
+                out there.</p>
+            <p>People with different background and environment are often busy with their 
+                different kinds of jobs and responsabilities. This fabulous website will make 
+                you be more aware of the climate condition that are out there. This website will 
+                specially benefit you, who do not find time in their schedule to do many 
+                things; and for you, who have many time to spare as well. This easy-to-use 
+                website will help you much more effectively than any other tool.</p>
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | <a target="_blank" style="text-decoration: underline" href="home-wireframe.html">wireframe</a> | Zetty Y. Davalos | <span id="date"></span></p>
+    </footer>
+    <script src="JS/scripts.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        if (dayNumber == 6) {
+            document.getElementById("message").classList.add("showme");
+        } else {
+            document.getElementById("message").classList.add("hideme");
+        }
+    </script>
+    <script src="JS/json.js"></script>
+</body>
+</html>
