@@ -5,8 +5,8 @@ fetch(apiURL)
   .then((weatherInfo) => {
     console.log(weatherInfo);
 
-    document.getElementById(cur).innerHTML=weatherInfo.weather[0].main;
+    /*document.getElementById(cur).innerHTML=weatherInfo.weather[0].main;
     document.getElementById(hum).innerHTML=weatherInfo.main.humidity;
     document.getElementById(temp).innerHTML=weatherInfo.main.temp;
-    document.getElementById(speed).innerHTML=weatherInfo.wind.speed;
+    document.getElementById(speed).innerHTML=weatherInfo.wind.speed;*/
   });
