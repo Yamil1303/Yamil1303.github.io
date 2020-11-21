@@ -12,9 +12,7 @@
 
     /* Main */
     main .hideMeSmall {display: block;}
-    main section .forecast {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
-    main section .forecast div {text-align: center; border: 1px solid #aaa; background-color: white;}
-    main section .forecast div h5 {background-color: #eee; margin: 0; padding: 1rem 0;}
+    main section .forecast {grid-template-columns: 1fr 1fr 1fr;}
     main article img#small {display: none;}
     main article img#medium {display: block; width: 30%; float:right; margin: 0 0 0 30px;}
 
