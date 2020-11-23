@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Haven | Weather for Everyone</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Fish Haven Town Page - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Share+Tech&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+</head>
+<body>
+    <div class="headerwrapper">
+    <header class="clearfix">
+        <figure id="logo">
+            <img src="images/logo.png" alt="The logo for our website">
+        </figure>
+        <div id="header">
+        <h1>Weather for Everyone</h1>
+        <h2>Whether you're in or out</h2>
+        </div>
+    </header>
+    </div>
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Spring</a></li>
+            <li class="active"><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="message">The message about Sunday church</div>
+    <main>
+        <h2>Fish Haven</h2>
+        <div class="hero">
+            <picture>
+            <source media="(max-width: 559px)" srcset="images/500Small.jpg">
+            <source media="(max-width: 1027px)" srcset="images/800Medium.jpg">
+            <source media="(min-width: 1028px)" srcset="images/1100Large.jpg">
+            <img src="images/wdd230_image_franklinOriginal.jpeg" alt="image that occupy all the screen">
+            </picture>
+            <div id="summary">
+                <h3>Weather summary</h3>
+                <ul>
+                    <li>Currently: <span id="cur"></span></li>
+                    <li>Humidity: <span id="hum"></span></li>
+                    <li>Temperature: <span id="temp"></span>&deg;F</li>
+                    <li>Wind Speed: <span id="speed"></span> mhp</li>
+                    <li><span id="chill"></span></li>
+                </ul>
+            </div>
+        </div>
+        <section class="hideMeSmall">
+            <h2 id="hideMeSmall">Five Day Forecast</h2>
+            <section class="forecast">
+                <!--<div>
+                    <h5>Monday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>36&deg;</p>
+                </div>
+                <div>
+                    <h5>Tuesday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>37&deg;</p>
+                </div>
+                <div>
+                    <h5>Wednesday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>34&deg;</p>
+                </div>
+                <div>
+                    <h5>Thursday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>35&deg;</p>
+                </div>
+                <div>
+                    <h5>Friday</h5>
+                    <img src="images/sun.ico" alt="An picture of the sun">
+                    <p>36&deg;</p>
+                </div> -->
+            </section>
+        </section>
+        <article>
+            <h2>Article Title</h2>
+            <img id="medium" src="images/article.jpg" alt="Image for the article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit voluptatibus est, commodi reiciendis dolorem ab tempora. A maiores commodi nostrum non autem eius perferendis est dolorum asperiores sit accusamus possimus nisi et quas recusandae mollitia voluptas, molestias odio aut, vel excepturi saepe quae modi! Consequuntur corrupti explicabo at dicta quis, maiores quos qui iste nobis ex vitae amet dolor corporis natus nulla molestias eveniet inventore nostrum pariatur, impedit minus quaerat cum. Sunt a architecto libero sint, nisi eum qui omnis ea dolores ex. Blanditiis possimus ratione aliquam nisi ab ex architecto tenetur voluptates, dicta, sit quod, consequuntur esse ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit voluptatibus est, commodi reiciendis dolorem ab tempora. A maiores commodi nostrum non autem eius perferendis est dolorum asperiores sit accusamus possimus nisi et quas recusandae mollitia voluptas, molestias odio aut, vel excepturi saepe quae modi! Consequuntur corrupti explicabo at dicta quis, maiores quos qui iste nobis ex vitae amet dolor corporis natus nulla molestias eveniet inventore nostrum pariatur, impedit minus quaerat cum. Sunt a architecto libero sint, nisi eum qui omnis ea dolores ex. Blanditiis possimus ratione aliquam nisi ab ex architecto tenetur voluptates, dicta, sit quod, consequuntur esse ea.</p>
+            <img id="small" src="images/article.jpg" alt="Image for the article">
+        </article>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <article>
+                <div>
+                    <h3>Address:</h3>
+                    <p>The weather center</p>
+                    <p>123 Main Street</p>
+                    <p>Franklin, MI 87654</p>
+                </div>
+                <div id="right">
+                    <h3>Phone:</h3>
+                    <p>(801) 555-1234</p>
+                    <h3>Email:</h3>
+                    <p>yamil_sud@hotmail.com</p>
+                </div>
+            </article>
+            <img id="small2" src="images/map.jpg" alt="Map's image of Preston, Idaho">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Zetty Y. Davalos | source: <a href="https://openweathermap.org/">https://openweathermap.org</a> | <span id="date"></span></p>
+    </footer>
+    <script src="JS/scripts.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        if (dayNumber == 6) {
+            document.getElementById("message").classList.add("showme");
+        } else {
+            document.getElementById("message").classList.add("hideme");
+        }
+    </script>
+    <script src="JS/weatherFish.js"></script>
+    <script src="JS/forecastFish.js"></script>
+</body>
+</html>
