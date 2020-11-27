@@ -51,7 +51,7 @@ main section .forecast {display: grid; grid-template-columns: 1fr; grid-gap: 10p
 main section .forecast div {text-align: center; border: 1px solid #aaa; background-color: white;}
 main section .forecast div h5 {background-color: #eee; margin: 0; padding: 1rem 0;}
 
-main .contact {margin-bottom: 20px;}
+main .contact {margin-bottom: 20px; margin-top: 50px;}
 main .contact img#small2 {width: 100%;}
 main .contact article {display: flex;}
 main .contact article #right {padding-left: 30%;}

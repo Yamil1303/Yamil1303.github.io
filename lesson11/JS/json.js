@@ -16,6 +16,7 @@ fetch(requestURL)
             let rainfall = document.createElement('p');
             let img = document.createElement('img');
 
+            if (towns[i].name=="Fish Haven" || towns[i].name== "Preston" || towns[i].name=="Soda Springs"){
             name.textContent = towns[i].name;
             motto.textContent = towns[i].motto;
             year.textContent = "Year Founded: " + towns[i].yearFounded; 
@@ -24,7 +25,6 @@ fetch(requestURL)
             img.setAttribute('src', "images/" + towns[i].photo);
             img.setAttribute('alt', "Photograph of: " + name.textContent);
 
-            if (towns[i].name=="Fish Haven" || towns[i].name== "Preston" || towns[i].name=="Soda Springs"){
             div.appendChild(name);
             div.appendChild(motto);
             div.appendChild(year);
