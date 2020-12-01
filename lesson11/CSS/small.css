@@ -59,6 +59,8 @@ main .contact img#small2 {width: 100%;}
 main .contact article {display: flex;}
 main .contact article #right {padding-left: 30%;}
 
+main #title {text-align: center; padding-top: 20px;}
+
 
 /* Footer */
 footer {background-color: #550e97; text-align: center;padding: 0.1px;}

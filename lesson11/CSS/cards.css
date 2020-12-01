@@ -1,4 +1,4 @@
-h1 {text-align: center; padding-top: 20px;}
+h1 {text-align: center;}
 .cities {display: grid; grid-template-columns: 1fr; grid-gap: 0.8em;}
 .cities section {
     padding: 0;
