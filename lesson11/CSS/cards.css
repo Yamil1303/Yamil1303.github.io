@@ -11,7 +11,7 @@ h1 {text-align: center;}
     margin-bottom: 50px;
 }
 section:nth-of-type(1) p:nth-of-type(1), section:nth-of-type(2) p:nth-of-type(1) {padding-top: 20px;}
-img {padding: 0; margin: 0; width: 300px; max-height: 156px; margin-bottom: -4px;}
+#img {padding: 0; margin: 0; width: 300px; max-height: 156px; margin-bottom: -4px;}
 
 
 
@@ -25,14 +25,14 @@ img {padding: 0; margin: 0; width: 300px; max-height: 156px; margin-bottom: -4px
         max-width: 522px;
         max-height: 250px;
     }
-    .cities section:nth-child(2) img {
+    .cities section:nth-child(2) #img {
         grid-column: 1;
         grid-row: 1;
     }
     .cities section:nth-child(2) div {
         grid-column: 2;
     }
-    .cities section img {margin: 45px 5px 5px 5px; width: 250px;}
+    .cities section #img {margin: 45px 5px 5px 5px; width: 250px;}
 }
 
 @media only screen and (min-width: 1028px) {
@@ -40,6 +40,6 @@ img {padding: 0; margin: 0; width: 300px; max-height: 156px; margin-bottom: -4px
         grid-template-columns: 1fr 1fr 1fr;
     }
     .cities section {display: block; max-width: 280px; max-height: 410px;}
-    .cities section img {padding: 0; margin: 0; width: 300px; max-height: 156px; margin-bottom: -4px;}
+    .cities section #img {padding: 0; margin: 0; width: 300px; max-height: 156px; margin-bottom: -4px;}
 
 }
