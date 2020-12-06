@@ -1,0 +1,46 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {background-color: #e5e5e5;}
+body p, ul li, table tr td {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 1.1rem;
+}
+h1, h2, h3, tr th {
+    font-family: 'Yeseva One', cursive;
+}
+
+/*---------------------Header----------------------*/
+header {background-color: #fca311; display: flex; align-items: center; padding-left: 10px;}
+header h1 {font-size: 1.5rem; color: black;}
+#logo {margin: 0; width: 55px;}
+img {max-width:100%;}
+#header {margin-left: 10px; line-height: 0.7em;}
+#header h2 {font-size: 1.1rem; color: black;}
+button {float: right; margin-right: 15px; margin-top: -50px;}
+
+/*------------------Navigation---------------------*/
+nav ul {padding: 0; margin: 0;}
+nav ul li {list-style-type: none; background-color: black;}
+nav ul li a {text-decoration: none; color: #e5e5e5; display: block; padding: 10px; text-align: center;}
+nav ul li a:hover {background-color: #e5e5e5; color: #14213d;}
+nav ul li.active {background-color: #14213d;}
+nav ul li.active a {color: #e5e5e5;}
+.hide {display: none;}
+
+
+
+/*-------------------Footer----------------------*/
+footer {background-color: #fca311; text-align: center; padding: 0.1px;}
+footer p {color: #e5e5e5;}
+
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
