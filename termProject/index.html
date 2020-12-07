@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page | This is Scoots!</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="description" content="Home Page - Term Project - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Yeseva+One&display=swap" rel="stylesheet">
@@ -13,34 +14,40 @@
 </head>
 <body>
     <div class="headerwrapper">
-        <header class="clearfix">
-            <figure id="logo">
-                <a href="index.html"><img src="images/logo.jpg" alt="The logo for our website"></a>
-            </figure>
-            <div id="header">
-            <h1>This Is Scoots!</h1>
-            <h2>Everything you want</h2>
-            </div>
-        </header>
+    <header class="clearfix">
+        <figure id="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="The logo for our website"></a>
+        </figure>
+        <div id="header">
+        <h1>This Is Scoots!</h1>
+        <h2>Everything you want</h2>
         </div>
-        <div class="navwrapper">
-        <nav class="clearfix">
-            <button onclick="toggle()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        </div>
+    </header>
+    </div>
+
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
 
 
 
 
     <footer>
         <p>&copy; <span id="year"></span> | Zetty Y. Davalos | <span id="date"></span></p>
+        <div id=media>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube icon"></a>
+        </div>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
