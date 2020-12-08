@@ -7,6 +7,9 @@
     .navwrapper {background-color: black;}
     nav {max-width: 1028px; margin: auto;}
 
+    /*-------------------------------Main-------------------------*/
+    main {max-width: 1028px; margin: auto;}
+
     /*---------------------------Footer-----------------------*/
     footer {max-width: 1028px; margin: auto;}
 }

@@ -30,7 +30,9 @@ nav ul li.active a {color: #e5e5e5;}
 nav ul li.active a:hover {color: #14213d;}
 .hide {display: none;}
 
-
+/*---------------------------Main--------------------------*/
+main {padding: 0 10px 0 10px;}
+h1 {text-align: center;}
 
 /*-------------------Footer----------------------*/
 footer {background-color: #fca311; text-align: center; padding: 0.1px;}

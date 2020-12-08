@@ -8,9 +8,10 @@
     <meta name="description" content="Home Page - Term Project - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/small.css">
-    <link rel="stylesheet" href="CSS/medium.css">
-    <link rel="stylesheet" href="CSS/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <div class="headerwrapper">
@@ -37,7 +38,39 @@
         </ul>
     </nav>
     </div>
+    <main>
+        <h1 id="title"></h1>
+        <div class="hero">
+            <picture>
+            <source media="(max-width: 559px)" srcset="images/homesmall.png">
+            <source media="(max-width: 1027px)" srcset="images/homemedium.png">
+            <source media="(min-width: 1028px)" srcset="images/homelarge.jpg">
+            <img src="images/homelarge.jpg" alt="image that occupy all the screen for the Home page">
+            </picture>
 
+            <a href="reservations.html">Make a Rental Reservation</a>
+        </div>
+
+    <div id="weather">
+        <div id="summary">
+            <h2>Weather summary</h2>
+            <ul>
+                <li>Currently: <span id="cur"></span></li>
+                <li>Humidity: <span id="hum"></span>%</li>
+                <li>Temperature: <span id="temp"></span>&deg;F</li>
+                <li>Wind Speed: <span id="speed"></span> mhp</li>
+                <li><span id="chill"></span></li>
+            </ul>
+        </div>
+
+        <section>
+            <h2>Three Day Forecast</h2>
+            <section class="forecast">
+            </section>
+        </section>
+    </div>
+
+    </main>
 
 
 
@@ -51,5 +84,7 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/lastmodified.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/forecast.js"></script>
 </body>
 </html>
