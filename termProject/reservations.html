@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | This is Scoots!</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Reservations - Final Project - Zetty Yamil Davalos Barrozo - WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/reservations.css">
+</head>
+<body>
+    <div class="headerwrapper">
+    <header class="clearfix">
+        <figure id="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="The logo for our website"></a>
+        </figure>
+        <div id="header">
+        <h1>This Is Scoots!</h1>
+        <h2>Everything you want</h2>
+        </div>
+    </header>
+    </div>
+    
+    <div class="navwrapper">
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    <main>
+        <h1 id="title">Reservations</h1>
+
+        <h2>Rental Agreement</h2>
+        <p>Before you go ahead to complete the form for the reservation of the scooter, you should know that you are agreeing with the terms and conditions of the contract. Such terms and conditions are as follow:</p>
+        <ul>
+            <li>We may take the scooter back if it is abandoned or placed inappropriately.</li>
+            <li>You should pick up the scooter on the same date and time that is specified. If it is not possible for any external reason, you should call and renew the reservation at least 6 hours before the original time.</li>
+            <li>You should return the scooter in the same conditions you received it.</li>
+            <li>You are responsable if the scooter is stolen or get lost.</li>
+            <li>You should return the scooter by the agreed time.</li>
+            <li>You are responsable for any damage the scooter receives since the time you pick it up until you return it to the agreed place.</li>
+        </ul>
+        <p>You will have to face the justice imposed by the police officers of the city in case of any violation to any point of the agreement. You will have to pay the price for any damage or loss of the property as well as any penalty fee if the scooter is not returned on time. Being aware of this rental agreement, you can go ahead and fill the form to make your reservation.</p>
+
+        <h2>Rental Reservation Form</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Reporter's Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,60}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="user@gmail.com" required></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+                <label class="top">Home state or Country <input type="text" name="country"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rental Information</legend>
+                <label class="top">Date <input type="date" name="reday"></label>
+                <div>Period</div>
+                <label class="sbs"><input type="radio" name="period" value="half"> Half Day</label>
+                <label class="sbs"><input type="radio" name="period" value="full"> Full Day</label>
+                <label class="top" for="type">Rental Type* 
+                    <input list="rentalType" id="type" name="type" required>
+                    <datalist id="rentalType">
+                        <option value="Honda Metro Scooter">
+                        <option value="Honda Dio Scooter">
+                        <option value="Honda PCX150 Scooter">
+                        <option value="Honda Pioneer ATV">
+                        <option value="Jeep Wrangler - 4 door with a/c">
+                        <option value="Jeep Wrangler - 2 door">
+                    </datalist>
+                </label>
+                <label class="top">Number* <input type="number" name="num" min="1" required></label>
+                <label class="top">Cruise Line <input type="text" name="line"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Special Accommodations</legend>
+                <label class="top" for="need">Need of a Drop-off Request </label><input type="range" id="need" name="need" min="1" max="10">
+                <label class="top">Location of the Drop-off 
+                    <select name="region">
+                        <option value="" disabled>Select Region ...&#9662;</option>
+                        <option value="centro">Centro de Cozumel</option>
+                        <option value="terminal">Terminal Puerta Maya</option>
+                    </select>
+                </label>
+                <label class="top" for="additional">Comments</label>
+                    <textarea id="additional" name="additional" rows="4" cols="30"></textarea>
+            </fieldset>
+            <input type="submit" value="Make a Reservation" class="submitBtn">
+        </form>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; <span id="year"></span> | Zetty Davalos | Last modified: <span id="last_updated"></span></p>
+        <div id=media>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/lastmodified.js"></script>
+</body>
+</html>
