@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <div class="headerwrapper">
@@ -74,6 +75,18 @@
                 <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
             </ul>
         </section>
+
+        <form method="get" action="thanksContact.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,60}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="user@gmail.com" required></label>
+                <label class="top" for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Send Comments" class="submitBtn">
+        </form>
     </main>
 
 
