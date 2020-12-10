@@ -10,12 +10,15 @@ main .hero a {display: block; background-color: rgb(252,163,17); color: black;
             border-radius: 10px; text-decoration: none; width: 220px; position: absolute;
             top: 10px; left: 10px;}
 
+main section#rentals {margin-bottom: 50px;}
+
 main #summary h2 {text-align: center;}
-main #summary {max-width: 250px; margin: auto;}
+main #summary {max-width: 250px; margin: auto; margin-bottom: 50px;}
 
 
 @media only screen and (min-width: 560px) {
     main section .forecast {grid-template-columns: 1fr 1fr 1fr;}
+    div#summary {background-color: #14213d; color: white;}
 }
 
 @media only screen and (min-width: 1028px) {
