@@ -5,7 +5,6 @@ fetch(apiURL)
   .then((weatherInfo) => {
 
     /* ------------------ Weather Summary -------------------*/
-    document.getElementById("title").innerHTML=weatherInfo.name;
     document.getElementById("cur").innerHTML=weatherInfo.weather[0].main;
     document.getElementById("hum").innerHTML=weatherInfo.main.humidity;
     var tempNum = document.getElementById("temp").innerHTML=weatherInfo.main.temp;

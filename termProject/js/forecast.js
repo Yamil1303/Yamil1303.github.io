@@ -42,7 +42,7 @@ const api = "//api.openweathermap.org/data/2.5/forecast?id=3530103&appid=57eab0c
             forecastdiv.appendChild(myicon);
             forecastdiv.appendChild(fivetemp);
 
-            document.querySelector('section.forecast').appendChild(forecastdiv);
+            document.querySelector('div.forecast').appendChild(forecastdiv);
         }  
     }
   });
