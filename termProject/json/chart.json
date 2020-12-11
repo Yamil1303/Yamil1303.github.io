@@ -3,7 +3,7 @@
         {
             "name": "Honda Metro Scooter",
             "photo": "1.jpg",
-            "max. persons": 1,
+            "maxPersons": 1,
             "reservation":{"half day": 20, "full day": 30},
             "walk-in":{"half day": 25, "full day": 35}
         },
@@ -11,7 +11,7 @@
         {
             "name": "Honda Dio Scooter",
             "photo": "2.jpg",
-            "max. persons": 2,
+            "maxPersons": 2,
             "reservation":{"half day": 30, "full day": 40},
             "walk-in":{"half day": 35, "full day": 45}
         },
@@ -19,7 +19,7 @@
         {
             "name": "Honda PCX150 Scooter",
             "photo": "3.jpg",
-            "max. persons": 2,
+            "maxPersons": 2,
             "reservation":{"half day": 40, "full day": 50},
             "walk-in":{"half day": 45, "full day": 55}
         },
@@ -27,7 +27,7 @@
         {
             "name": "Honda Pioneer ATV",
             "photo": "4.jpg",
-            "max. persons": 4,
+            "maxPersons": 4,
             "reservation":{"half day": 50, "full day": 70},
             "walk-in":{"half day": 60, "full day": 80}
         },
@@ -35,7 +35,7 @@
         {
             "name": "Jeep Wrangler - 4 door with a/c",
             "photo": "5.jpg",
-            "max. persons": 5,
+            "maxPersons": 5,
             "reservation":{"half day": 70, "full day": 100},
             "walk-in":{"half day": 85, "full day": 125}
         },
@@ -43,7 +43,7 @@
         {
             "name": "Jeep Wrangler - 2 door",
             "photo": "6.jpg",
-            "max. persons": 4,
+            "maxPersons": 4,
             "reservation":{"half day": 60, "full day": 85},
             "walk-in":{"half day": 70, "full day": 90}
         }
