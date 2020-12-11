@@ -13,18 +13,12 @@ form fieldset {
 .flex-outer > li > label,
 .flex-outer li p {
   flex: 1 0 100px;
-  max-width: 210px;
+  max-width: 200px;
 }
-.flex-outer > li > label + *,
-.flex-inner {
-  flex: 0 0 200px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
+
 .flex-inner li {
-    margin-left: 127px;
-    width: 200px;
+    width: 90px;
+    display: block;
 }
 form input.submitBtn {
     border: none;
@@ -42,16 +36,28 @@ form legend {
     padding: 0 .5rem;
     font-weight: bold;
 }
+form input#half, form input#full {width: 12px;}
 form input {
     padding: 7px;
+    width: 233px;
     border: 1px solid #999;
     border-radius: 7px;
     color: rgb(77, 77, 77);
     background-color: rgba(0,0,0,0.1);
+}
+form select {
+    width: 233px;
 }
 form input:required {
     border-color: red;
 }
 form input:required:valid {
     border-color: green;
+}
+
+
+@media only screen and (min-width: 560px) {
+    .flex-inner li {
+        margin-left: 117px;
+    }
 }

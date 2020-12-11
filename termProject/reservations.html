@@ -77,23 +77,23 @@
                 <legend>Rental Information</legend>
                 <ul class="flex-outer">
                 <li>
-                    <label class="top" for="date">Date </label><input type="date" id="date" name="reday">
+                    <label for="date">Date </label><input type="date" id="date" name="reday">
                 </li>
                 <li>
                     <div>Period</div>
                     <ul class="flex-inner">
                     <li>
                         <input type="radio" id="half" name="period" value="half">
-                        <label class="sbs" for="half"> Half Day</label>
+                        <label for="half">Half Day</label>
                     </li>
                     <li>
                         <input type="radio" id="full" name="period" value="full">
-                        <label class="sbs" for="full"> Full Day</label>
+                        <label for="full">Full Day</label>
                     </li>
                     </ul>
                 </li>
                 <li>
-                    <label class="top" for="type">Rental Type* </label>
+                    <label for="type">Rental Type* </label>
                     <input list="rentalType" id="type" name="type" required>
                     <datalist id="rentalType">
                         <option value="Honda Metro Scooter">
@@ -105,10 +105,10 @@
                     </datalist>
                 </li>
                 <li>
-                    <label class="top" for="num">Number* </label><input type="number" id="num" name="num" min="1" required>
+                    <label for="num">Number* </label><input type="number" id="num" name="num" min="1" required>
                 </li>
                 <li>
-                    <label class="top" for="line">Cruise Line </label><input type="text" id="line" name="line">
+                    <label for="line">Cruise Line </label><input type="text" id="line" name="line">
                 </li>
                 </ul>
             </fieldset>
@@ -116,10 +116,10 @@
                 <legend>Special Accommodations</legend>
                 <ul class="flex-outer">
                 <li>
-                    <label class="top" for="need">Need of a Drop-off Request </label><input type="range" id="need" name="need" min="1" max="10">
+                    <label for="need">Need of a Drop-off Request </label><input type="range" id="need" name="need" min="1" max="10">
                 </li>
                 <li>
-                    <label class="top" for="region">Location of the Drop-off </label>
+                    <label for="region">Location of the Drop-off </label>
                     <select name="region" id="region">
                         <option value="" disabled>Select Region ...&#9662;</option>
                         <option value="centro">Centro de Cozumel</option>
@@ -127,7 +127,7 @@
                     </select>
                 </li>
                 <li>
-                    <label class="top" for="comments">Comments</label>
+                    <label for="comments">Comments</label>
                     <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
                 </li>
                 </ul>
