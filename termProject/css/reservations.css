@@ -4,34 +4,27 @@ form fieldset {
     border-radius: 10px;
     padding: .5rem 2%;
 }
-form legend {
-    color: #000000;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-    font-weight: bold;
+.flex-outer li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-form label.top, form div {
-    display: block;
-    padding-top: 1rem;
-    color: #9c260b;
-    font-size: .8rem;
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 100px;
+  max-width: 210px;
 }
-form label.top input, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: 1px solid #999;
-    border-radius: 7px;
-    padding: .75rem;
-    color: rgb(77, 77, 77);
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 0 0 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: rgb(77, 77, 77);
+.flex-inner li {
+    margin-left: 127px;
+    width: 200px;
 }
 form input.submitBtn {
     border: none;
@@ -43,20 +36,22 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
-form label.top input:required {
-    border-left: 5px solid red;
+form legend {
+    color: #000000;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: bold;
 }
-form label.top input:required:valid {
-    border-left: 5px solid green;
+form input {
+    padding: 7px;
+    border: 1px solid #999;
+    border-radius: 7px;
+    color: rgb(77, 77, 77);
+    background-color: rgba(0,0,0,0.1);
 }
-form textarea {
-    width: 100%;
-    max-width: 20rem;
+form input:required {
+    border-color: red;
 }
-
-
-@media only screen and (min-width: 1028px) {
-    form label.sbs {
-        padding: .4rem 0;
-    }
+form input:required:valid {
+    border-color: green;
 }
