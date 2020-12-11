@@ -36,8 +36,8 @@ h1 {text-align: center;}
 
 /*-------------------Footer----------------------*/
 footer {background-color: #fca311; text-align: center; padding: 0.1px;}
-footer p {color: #000000;}
-
+footer p {color: #000000; font-size: 1em;}
+footer img {width: 50px;}
 
 
 
