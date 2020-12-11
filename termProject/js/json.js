@@ -24,7 +24,6 @@ fetch(requestURL)
             rfull.textContent = "Full day reservation: " + rentals[i].reservation["full day"] + "$";
             whalf.textContent = "Half day walk-in: " + rentals[i]["walk-in"]["half day"] + "$";
             wfull.textContent = "Full day walk-in: " + rentals[i]["walk-in"]["full day"] + "$";
-            img.setAttribute('id', "img");  //edited
             img.setAttribute('src', "images/" + rentals[i].photo);
             img.setAttribute('alt', "Photograph of: " + name.textContent);
 
