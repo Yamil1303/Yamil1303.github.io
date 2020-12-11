@@ -25,8 +25,8 @@ nav ul {padding: 0; margin: 0;}
 nav ul li {list-style-type: none; background-color: black;}
 nav ul li a {text-decoration: none; color: #e5e5e5; display: block; padding: 10px; text-align: center;}
 nav ul li a:hover {background-color: #e5e5e5; color: #14213d;}
-nav ul li.active {background-color: #14213d;}
-nav ul li.active a {color: #e5e5e5;}
+nav ul li.active {background-color: white;}
+nav ul li.active a {color: black;}
 nav ul li.active a:hover {color: #14213d;}
 .hide {display: none;}
 
